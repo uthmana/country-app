@@ -5,7 +5,6 @@ import { store } from "@/store";
 const rootUrl = "https://restcountries.com/v3.1/"
 
 const setUrl = (str: string) : string =>{
-  //  console.log(`${rootUrl}/alpha/${str}`);
  return str == "all" ?  `${rootUrl}${str}`: `${rootUrl}alpha/${str}`;
 }
 
@@ -25,11 +24,6 @@ export default  async function requestData(params: string) : Promise<Response>{
     }
     catch(err:any) {
       store.commit('LOADING', false);
-     
-     // console.log(err.response.data);
       return err.response.data;
     }
-
-
- 
 }

@@ -16,8 +16,8 @@
 
     <ul>
         <li><span class="country-item">Top Level Domain</span> <span class="country-value">: {{countryDetail.topLevelDomain}}</span></li>
-        <li><span class="country-item">Currencies</span>: <span class="country-value" v-for="(currency, dx) in countryDetail.currencies" :key="dx"> {{currency.name + ", "}} </span></li>
-        <li><span class="country-item">Languages</span> : <span class="country-value" v-for="(lang, idx) in countryDetail.language" :key="idx"> {{lang}}, </span></li>
+        <li><span class="country-item">Currencies</span>: <span class="country-value" v-for="(currency, dx) in countryDetail.currencies" :key="dx"> {{currency.name + ". "}} </span></li>
+        <li><span class="country-item">Languages</span> : <span class="country-value" v-for="(lang, idx) in countryDetail.language" :key="idx"> {{lang}}. </span></li>
     </ul>
 
      </div>

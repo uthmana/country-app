@@ -6,7 +6,6 @@
       <FilterInput @value="onFilter" />
    </div>
 
- 
    <span class="result-count"> {{dataResult.length}} / {{allCountries.length}}</span>
 
    <div class="card-container">
@@ -33,7 +32,7 @@ import ICountry from '@/types/country'
 
 export default defineComponent({
   setup() {
-   const {  searchResult, getSearchQuery} = useSearchQuery();
+   const { searchResult, getSearchQuery} = useSearchQuery();
    const { filterdResult, getFiltedData } = useFilterQuery();
 
   return{ 
@@ -88,7 +87,6 @@ export default defineComponent({
 });
 </script>
 
-
 <style  lang="scss">
 .card-container{
   display: flex;
@@ -128,6 +126,5 @@ export default defineComponent({
 }
 
 }
-
 
 </style>

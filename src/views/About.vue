@@ -1,12 +1,12 @@
 <template>
   <div class="about">
   <div class="back-home">
-       <router-link to="/" class="back-link"> <span> <i class="fa fa-long-arrow-left"></i></span>  Back</router-link>
+     <router-link to="/" class="back-link"> <span> <i class="fa fa-long-arrow-left"></i></span>  Back</router-link>
   </div>
    <div class="country-detail">
      <Loading />
       <DetailCard v-if="!loading && countryDetail" :countryDetail="countryDetail" />
-    <Error />
+      <Error />
    </div>
   </div>
 </template>
