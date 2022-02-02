@@ -15,16 +15,16 @@ Country-app is a single page application that displays all the countries using R
 
 ## Tools used in this challenge
  
- --VueJs 3
- --Axios
- --Vuex
- --TypeScript
- --Scss
- --Cypress
+- VueJs 3
+- Axios
+- Vuex
+- TypeScript
+- Scss
+- Cypress
  
 [Live demo](https://countries.uthmanmuhammad.com/) 
 
 
-Feel free to download
+Feel free to **download**
 
 
