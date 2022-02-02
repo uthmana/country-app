@@ -16,9 +16,9 @@ Country-app is a single page application that displays all the countries using R
 ## Tools used in this challenge
  
 - VueJs 3
-- Axios
 - Vuex
 - TypeScript
+- Axios
 - Scss
 - Cypress
  
