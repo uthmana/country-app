@@ -1,0 +1,107 @@
+:root {
+  --DarkBlueElem: hsl(209, 23%, 22%);
+  --VeryDarkBg: hsl(207, 26%, 17%);
+  --DarkGrayInput: hsl(0, 0%, 52%);
+  --VeryLightBg: hsl(0, 0%, 98%);
+  --WhiteDarkTextAndLightElements: hsl(0, 0%, 100%);
+  --DarkText: hsl(200, 15%, 8%);
+
+  --lightText: #ffffff;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadowHover: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  --scrollbar: hsl(0, 0%, 98%);
+  --scrollbarThumb: #cccccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+  background: var(--VeryLightBg);
+  transition: background 0.2s ease-out;
+}
+
+body.dark {
+  --WhiteDarkTextAndLightElements: var(--DarkBlueElem);
+  --VeryLightBg: var(--VeryDarkBg);
+  --DarkText: var(--lightText);
+  --scrollbar: var(--VeryDarkBg);
+}
+
+body.dark::-webkit-scrollbar {
+  background-color: var(--scrollbar);
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--scrollbar);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--scrollbarThumb);
+}
+
+#app,
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 12px 0px;
+  box-shadow: var(--shadow);
+  background: var(--WhiteDarkTextAndLightElements);
+  color: var(--DarkText);
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 34px;
+}
+
+.logo-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+footer {
+  margin-top: 3rem;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+  color: var(--DarkText);
+}
+
+.footer-link {
+  color: var(--DarkText);
+}
+
+@media screen and (max-width: 600px) {
+  .header-content {
+    padding: 0px 14px;
+  }
+  .logo-title {
+    font-size: 16px;
+  }
+}
