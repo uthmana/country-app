@@ -1,34 +1,30 @@
 # country-app
 
-## Project setup
-```
-npm install
-```
+Country-app is a single page application that displays all the countries using REST Countries V3 API. with the provided designs
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Features
+   Users are able to:
+   
+1. See all countries from the API on the homepage
+2. Search for a country using an input field
+3. Filter countries by region
+4. Click on a country to see more detailed information on a separate page
+5. Click through to the border countries on the detail page
+6. Toggle the color scheme between light and dark mode (optional)
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Tools used in this challenge
+ 
+ --VueJs 3
+ --Axios
+ --Vuex
+ --TypeScript
+ --Scss
+ --Cypress
+ 
+[Live demo](https://countries.uthmanmuhammad.com/) 
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+Feel free to download
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
